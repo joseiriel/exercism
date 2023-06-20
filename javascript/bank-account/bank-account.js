@@ -37,7 +37,7 @@ export class BankAccount {
 }
 
 export class ValueError extends Error {
-  constructor() {
-    super("Bank account error");
+  constructor(message) {
+    super(message ?? "Bank account error");
   }
 }
